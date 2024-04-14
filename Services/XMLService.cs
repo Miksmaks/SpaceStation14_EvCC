@@ -50,6 +50,8 @@ namespace SpaceStation14_EventCardCreator.Services
             XElement main = xdoc.Root;
             XElement EventBase_EventList = main.Element("EventList");
             XElement EventBase_ClassList = main.Element("ClassList");
+            SaveLoadService.E_list.Clear();
+            SaveLoadService.C_list.Clear();
             foreach (XElement i in EventBase_EventList.Elements())
             {
                 EventMainProperties EMProps = new EventMainProperties();

@@ -14,7 +14,6 @@ namespace SpaceStation14_EventCardCreator.Services
         Edit,
         Unknown
     }
-    [DataObject]
     public static class SaveLoadService
     {
         public static string FileName = "";
